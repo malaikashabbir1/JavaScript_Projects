@@ -1,0 +1,46 @@
+* {
+    font-family: century gothic;
+}
+
+.container {
+    padding: 20px;
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+}
+
+body{
+    background-color: grey;
+}
+
+ul {
+  list-style-position: outside;
+  padding-left: 0;
+  display: inline-block;    /*Makes the list shrink to its content */
+  text-align: left;        /* Keeps bullets and text aligned */
+  margin: 0 auto;          /* Centers the block horizontally */
+}
+
+#cal_button {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+
+}
+
+#cal_button:hover {
+    background-color: black;
+    color:white;
+     transform: scale(1.05);
+}
+
+
+#result {
+  font-size: 25px;
+  margin-top: 20px;
+  color: rgb(241, 241, 241);
+  text-align: center;
+}
+
+
+

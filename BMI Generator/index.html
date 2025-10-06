@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Generator</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI CALULATOR</h1>
+        <div>
+            <form>
+                <label>Height in cm: </label>
+                <input type="number" id = "height"  step="any">
+                <br></br>
+                 <!-- step="any" tells the browser that any decimal value is allowed  -->
+                <label>Weight in kg: </label>
+                <input type="number" id = "weight"   step="any">  
+                <br>
+                <br>
+                <button id ="cal_button">  Calculate </button>
+                <div>
+                    <h3><u>BMI Weight Guide </u></h3>
+                    <ul >
+                        <li class = "li_item"><b>Under Weight</b> =  Less Than 18.6</li>
+                        <li class = "li_item"><b>Normal Range</b> =  18.6 to 24.9</li>
+                        <li class = "li_item"><b>OverWeight</b> =  Greater Than 24.9</li>
+                    </ul>
+                </div>
+            </form>
+            <div id ="result"></div>
+    </div>
+</body>
+</html>
+<script src="project.js"></script> 
+
+
+
+
