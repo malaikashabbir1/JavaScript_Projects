@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .outer {
+      width: 400px;
+      background: hotpink;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .result {
+      background: aquamarine;
+      height: 80px;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-align: right;
+      border-radius: 8px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* Numbers grid */
+    .numbers {
+      display: grid;
+      grid-template-columns: repeat(3, 80px);
+      gap: 1rem;
+      flex: 3;
+    }
+
+    /* Operators column */
+    .operators {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      flex: 1;
+    }
+
+    /* Base button style */
+    .btn {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Different colors */
+    .numbers .btn {
+      background: yellow;
+      color: black;
+    }
+
+    .operators .btn {
+      background: orange;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="result">0</div>
+
+    <div class="buttons">
+      <!-- Numbers -->
+      <div class="numbers">
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn">0</div>
+        <div class="btn">.</div>
+        <div class="btn">C</div>
+      </div>
+
+      <!-- Operators -->
+      <div class="operators">
+        <div class="btn">+</div>
+        <div class="btn">-</div>
+        <div class="btn">*</div>
+        <div class="btn">/</div>
+        <div class="btn">=</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+      <!-- ✅ Add Tailwind via CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body class="flex justify-center items-center min-h-screen">
+    <div class="outer w-[90%] sm:w-[380px] max-w-sm md:max-w-md lg:max-w-lg"> 
+        <button id="theme-toggle" class="p-1 rounded block ml-auto ">🌙</button> 
+        <div class ="result">
+        <!-- The readonly attribute means the user cannot type into the field manually. -->
+            <input type="text" id="display" placeholder="0" readonly>
+        </div>
+        <div class="buttons">
+            <div class="numbers">
+                <div class="btn main" onclick="clearInput()" >AC</div>
+                <div class="btn main" onclick="deleteLast()" >C</div>
+                <div class="btn main" onclick="addNumber('%')">%</div>
+                <div class="btn num"  onclick="addNumber('1')" >1</div>
+                <div class="btn num"  onclick="addNumber('2')">2</div>
+                <div class="btn num"  onclick="addNumber('3')">3</div>
+                <div class="btn num"  onclick="addNumber('4')">4</div>
+                <div class="btn num"  onclick="addNumber('5')">5</div>
+                <div class="btn num"  onclick="addNumber('6')">6</div>
+                <div class="btn num"  onclick="addNumber('7')">7</div>
+                <div class="btn num"  onclick="addNumber('8')">8</div>
+                <div class="btn num"  onclick="addNumber('9')">9</div>
+                <!-- spanning it about 2 columns  -->
+                <div class="btn num" id="zero" onclick="addNumber('0')" >0</div>
+                <div class="btn num" onclick="addNumber('.')"><b>.</b></div> 
+            </div>
+
+            <div class="operations">
+                <div class="btn operator" onclick="addNumber('+')">+</div>
+                <div class="btn operator" onclick="addNumber('-')"><b>-</b></div>
+                <div class="btn operator" onclick="addNumber('x')">x</div>
+                <div class="btn operator" onclick="addNumber('÷')">÷</div>
+                <div class="btn operator" onclick="calculate()"><b>=</b></div>
+            </div>
+            
+        </div>
+    </div> 
+    <script src="app.js"></script>
+</body>
+</html>
