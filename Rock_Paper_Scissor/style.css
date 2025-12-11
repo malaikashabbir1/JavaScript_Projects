@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: century gothic;
+}
+
+body{
+    background-color: #f8edeb;
+    text-align: center;
+}
+
+#landing-div{
+    height:100vh; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    font-size: 8vmin;
+    /* padding: 5vmin; */
+    line-height: 5rem;
+    /* margin-top: 5rem; */
+}
+
+/* MAIN LANDING PAGE IMAGE */
+.img-div{
+    text-align: center;
+}
+#main-img {
+    width: 80%;     
+    max-width:500px;    
+    height: auto;
+    padding: 1vmin;
+}
+
+#start-btn{
+    font-size: 1.5rem;
+    padding:2vmin;
+    gap:1vmin;
+    background-color: #f26a8d;
+    color:#fec5bb;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 10px #fec5bb;
+}
+#start-btn:hover {
+    background-color:#fcd5ce;
+    color:#f26a8d;
+}
+
+
+/* CHOICES */
+.choice{
+    margin-top: 4rem;
+    width: 20vw;
+    height: 20vw;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices-img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius:50%;
+}
+
+/* Outer Choices Div */
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    /* margin-top: 5rem; */
+}
+
+.choice:hover{
+    background-color: #d8e2dc;
+    cursor: pointer;
+}
+
+/* MEDIA QUERY FOR SMALLER SCREENS */
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* SCORE BOARD */
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:5rem;
+    padding: 5vmin;
+    font-size: 1.5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 2.5rem;
+}
+
+.msg-container{
+    margin: 2rem;
+    
+}
+#msg{
+    background-color:#83c5be;
+    color:#0a9396;
+    font-size: 2rem;
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+}
+
+#reset-btn{
+    font-size: 1.5rem;
+    padding:2vmin;
+    gap:1vmin;
+    background-color: #fec89a;
+    color: #7f4f24;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+#reset-btn:hover {
+    background-color:#ffd7ba;
+}
+
+
+/* Arrow Style */
+.arrow {
+    font-size: 3rem;
+    cursor: pointer;
+    /* margin-top: 2rem; */
+    color: #f26a8d;
+    animation: bounce 1.5s infinite;
+    
+}
+
+/* Simple bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+#game {
+    display: none; /* hidden at first */
+}
+
